@@ -83,7 +83,7 @@ module.exports = new Promise((resolve, reject) => {
         new FriendlyErrorsPlugin({
           compilationSuccessInfo: {
             messages: [
-              `Design System Docs: http://${devWebpackConfig.devServer.host}:6060 \n`,
+              `Design System Docs: http://${devWebpackConfig.devServer.host}:3000 \n`,
               `Vue.js App: http://${devWebpackConfig.devServer.host}:${port} \n`,
             ],
           },

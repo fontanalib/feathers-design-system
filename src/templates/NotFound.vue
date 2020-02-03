@@ -3,13 +3,16 @@
     <NavBar
       active="NotFound"
       :navItems="[
-        {name: 'Template', component: 'Index', href: '/#/'},
-        {name: 'Documentation', href: 'http://localhost:6060/'}
+        { name: 'Template', component: 'Index', href: '/#/' },
+        { name: 'Documentation', href: 'http://localhost:3000/' },
       ]"
     />
     <Wrapper>
       <Heading>404 Error</Heading>
-      <Paragraph>Couldn’t find a component that would match the URL you entered. Double check configuration in router/index.js.</Paragraph>
+      <Paragraph
+        >Couldn’t find a component that would match the URL you entered. Double check configuration
+        in router/index.js.</Paragraph
+      >
     </Wrapper>
   </component>
 </template>

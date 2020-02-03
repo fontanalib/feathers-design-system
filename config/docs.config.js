@@ -9,6 +9,7 @@ module.exports = {
    * Name of your design system. Changes both page title and sidebar logo.
    */
   title: "Vue Design System",
+  serverPort: 3000,
   /**
    * Most of the styles are defined in /docs/docs.styles.scss
    */
@@ -22,6 +23,7 @@ module.exports = {
     },
   },
   renderRootJsx: path.join(__dirname, "../docs/components/Preview.js"),
+  simpleEditor: false,
   /**
    * Define a custom code highlighting theme.
    */
