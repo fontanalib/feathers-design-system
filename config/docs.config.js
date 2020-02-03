@@ -11,6 +11,10 @@ module.exports = {
   title: "Vue Design System",
   serverPort: 3000,
   /**
+   * Enabling the following option splits sections into separate views.
+   */
+  navigation: true,
+  /**
    * Most of the styles are defined in /docs/docs.styles.scss
    */
   version: packageConfig.version,

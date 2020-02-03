@@ -2,19 +2,19 @@
   <div class="component-status">
     <ul class="status-list">
       <li>
-        <Icon name="ready" fill="#7cb518" size="small"/>
+        <svg-icon name="ready" fill="#7cb518" size="16px" />
         <p>Ready</p>
       </li>
       <li>
-        <Icon name="review" :fill="tokens.color_ucla_gold.value" size="small"/>
+        <svg-icon name="review" :fill="tokens.color_ucla_gold.value" size="16px" />
         <p>Under review</p>
       </li>
       <li>
-        <Icon name="deprecated" :fill="tokens.color_vermilion.value" size="small"/>
+        <svg-icon name="deprecated" :fill="tokens.color_vermilion.value" size="16px" />
         <p>Deprecated</p>
       </li>
       <li>
-        <Icon name="prototype" :fill="tokens.color_bleu_de_france.value" size="small"/>
+        <svg-icon name="prototype" :fill="tokens.color_bleu_de_france.value" size="16px" />
         <p>Prototype</p>
       </li>
       <li>
@@ -36,30 +36,30 @@
       <tbody>
         <tr v-for="(component, index) in components" :key="index" class="component">
           <td v-if="component.name">
-            <code class="name">{{component.name}}</code>
+            <code class="name"> {{ component.name }} </code>
           </td>
           <td v-else>N/A</td>
-          <td v-if="component.release">{{component.release}}</td>
+          <td v-if="component.release">{{ component.release }}</td>
           <td v-else>N/A</td>
           <td v-if="component.status">
-            <Icon v-if="component.status === 'ready'" name="ready" fill="#7cb518" size="small"/>
-            <Icon
+            <svg-icon v-if="component.status === 'ready'" name="ready" fill="#7cb518" size="16px" />
+            <svg-icon
               v-if="component.status === 'under-review' || component.status === 'review'"
               name="review"
               :fill="tokens.color_ucla_gold.value"
-              size="small"
+              size="16px"
             />
-            <Icon
+            <svg-icon
               v-if="component.status === 'prototype'"
               name="prototype"
               :fill="tokens.color_bleu_de_france.value"
-              size="small"
+              size="16px"
             />
-            <Icon
+            <svg-icon
               v-if="component.status === 'deprecated'"
               name="deprecated"
               :fill="tokens.color_vermilion.value"
-              size="small"
+              size="16px"
             />
           </td>
           <td v-else>—</td>
